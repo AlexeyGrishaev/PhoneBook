@@ -69,9 +69,9 @@ public class LoginTests extends TestBase {
 
     @Test(groups = {"smoke"})
     public void loginWrongEmail() {
-        logger.info("Test data --->: email: 'maragmail.com' & password: 'Mmar123456$'");
+        logger.info("Test data --->: email: 'locker@gmail.com' & password: 'Qwerty1234!'");
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm("maragmail.com", "Mmar123456$");
+        app.getHelperUser().fillLoginRegistrationForm("lockergmail.com", "Qwerty1234!");
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
         logger.info("Assert check is alert  present with error text 'Wrong email or password'");
@@ -80,9 +80,9 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginWrongPassword() {
-        logger.info("Test data --->: email: 'mara@gmail.com' & password: 'Mmar123'");
+        logger.info("Test data --->: email: 'locker@gmail.com' & password: 'Mmar123'");
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm("mara@gmail.com", "Mmar123");
+        app.getHelperUser().fillLoginRegistrationForm("locker@gmail.com", "Mmar123");
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
         logger.info("Assert check is alert  present with error text 'Wrong email or password'");

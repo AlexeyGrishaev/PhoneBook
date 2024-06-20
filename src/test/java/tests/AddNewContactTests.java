@@ -14,7 +14,7 @@ public class AddNewContactTests extends TestBase {
     public void preCondition() {
 
         if (!app.getHelperUser().isLogged()) {
-            app.getHelperUser().login(new User().withEmail("mara@gmail.com").withPassword("Mmar123456$"));
+            app.getHelperUser().login(new User().withEmail("locker@gmail.com").withPassword("Qwerty1234!"));
         }
 
     }

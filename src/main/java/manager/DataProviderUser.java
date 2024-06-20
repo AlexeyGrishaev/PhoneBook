@@ -36,7 +36,7 @@ public class DataProviderUser {
     @DataProvider
     public Iterator<Object[]> loginData() {
         List<Object[]> list = new ArrayList<>();
-        list.add(new Object[]{"mara@gmail.com", "Mmar123456$"});
+        list.add(new Object[]{"locker@gmail.com", "Qwerty1234!"});
         list.add(new Object[]{"sonya@gmail.com", "Ss12345$"});
         list.add(new Object[]{"mara@gmail.com", "Mmar123456$"});
         return list.iterator();
@@ -45,7 +45,7 @@ public class DataProviderUser {
     @DataProvider
     public Iterator<Object[]> loginModels() {
         List<Object[]> list = new ArrayList<>();
-        list.add(new Object[]{new User().withEmail("mara@gmail.com").withPassword("Mmar123456$")});
+        list.add(new Object[]{new User().withEmail("locker@gmail.com").withPassword("Qwerty1234!")});
         list.add(new Object[]{new User().withEmail("sonya@gmail.com").withPassword("Ss12345$")});
         list.add(new Object[]{new User().withEmail("mara@gmail.com").withPassword("Mmar123456$")});
         return list.iterator();
