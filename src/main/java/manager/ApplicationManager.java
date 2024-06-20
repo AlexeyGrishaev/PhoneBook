@@ -16,7 +16,7 @@ public class ApplicationManager {
 
     //WebDriver wd;
     EventFiringWebDriver wd;
-
+    //s
     HelperUser helperUser;
     HelperContact helperContact;
     String browser;
